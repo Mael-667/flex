@@ -1,0 +1,15 @@
+<div>
+    <div class="box">
+        <h2>Créer un compte</h2>
+        <form id="form" method="POST" onsubmit="return false;">
+            <label for="avatar" id="labelavatar"><img id="avatarinput" src="src/site/add.png"><input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" style="display: none;" onchange="return change(this);"/></label>
+            <label for="name"></label><input required="required" class="input" type="text" id="name" name="name" placeholder="Nom d'utilisateur" maxlength="12">
+            <label for="password"></label><input required="required" class="input" type="password" id="password" name="password" maxlength="4" minlength="4" pattern="[0-9]{4}" placeholder="Code PIN (4 chiffres)">
+            <input id="btn" class="input btn" type="submit" value="Créer le compte" />
+
+        </form>
+    </div>
+</div>
+
+
+<script src="src/site/createAcc.js"></script>
